@@ -118,6 +118,12 @@ span:nth-child(4){
 }
 
 @media (max-widht: 700px){
-    
+    .hero{
+        font-size: 26px;
+        margin-bottom: 10%;
+    }
+    .nav-links ul li{
+        display: block;
+    }
 
 }

@@ -116,14 +116,35 @@ span:nth-child(4){
     color: black;
     transition-delay: .5s;
 }
+.menu-icon{
+    width: 26px;
+    display: none;
+}
 
-@media (max-widht: 700px){
-    .hero{
+@media (max-width: 700px){
+    .hero h1{
         font-size: 26px;
         margin-bottom: 10%;
     }
     .nav-links ul li{
         display: block;
     }
-
+    .nav-links ul{
+        padding: 20px 5px;
+    }
+    .nav-links{
+        margin-top: 30px;
+    }
+    .nav-logo{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .menu-icon{
+        display: block;
+        top: 20px
+        right: 35px;
+        position: absolute;
+        cursor: pointer;
+    }
 }
+

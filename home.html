@@ -12,7 +12,7 @@
             <div class="nav-logo">
                  <a href="home.html"><img src="earth.png "></a>
             </div>
-            <div class="nav-links">
+            <div class="nav-links" id="mobileMenu">
                 <ul>
                     <a href="home.html"><li>Home</li></a>
                     <a href="about.html"><li>About us</li></a>
@@ -20,7 +20,7 @@
                     <a href="#"><li>Support us</li></a>
                 </ul>
             </div>
-            <img src="menu-icon.png" class="menu-icon">
+            <img src="menu-icon.png" class="menu-icon" onclick="showMenu()">
         </div>
         <div class="hero">
             <h1>EARTH 27, <br>FOR BEST GAMING EXPERIENCE</h1>
@@ -30,5 +30,16 @@
                 
             </div>
         </div>
+        <script>
+            function showMenu(){
+                var toggle = document.getElementById("mobileMenu")
+                if(toggle.style.height == "0px"){
+                    toggle.style.height = "200px";
+                }
+                else{
+                    toggle.style.height = "0px";
+                }
+            }
+        </script>
     </body>
 </html>

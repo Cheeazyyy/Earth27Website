@@ -145,6 +145,11 @@ span:nth-child(4){
         position: absolute;
         cursor: pointer;
     }
+    #mobileMenu{
+        height: 0;
+        overflow: hidden;
+        transition: 1s;
+    }
 
 }
 

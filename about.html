@@ -4,7 +4,7 @@
         <title>Earth 27 - For Best Gaming Experience</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="stylehome.css">
+        <link rel="stylesheet" href="styleabout.css.css">
         <link rel="shortcut icon" href="earth.png">
     </head>
     <body>
@@ -12,7 +12,7 @@
             <div class="nav-logo" >
                 <a href="home.html"><img src="earth.png "></a>
             </div>
-            <div class="nav-links">
+            <div class="nav-links" id="mobileMenu">
                 <ul>
                     <a href="home.html"><li>Home</li></a>
                     <a href="about.html"><li>About us</li></a>
@@ -20,10 +20,22 @@
                     <a href="#"><li>Support us</li></a>
                 </ul>
             </div>
+            <img src="menu-icon.png" class="menu-icon" onclick="showMenu()">
         </div>
         <div class="main">
             <h1>Welcome To Earth 27</h1>
             <p>Earth 27 is a Discord community that was established in 2019 with the theme of Various Mythologies and Space Servers. <br> This is a means to find friends to play games or just joking together. The purpose of this Server <br> was formed to strengthen togetherness in cyberspace and eventually be able to meet in the real world </p>
         </div>
+        <script>
+            function showMenu(){
+                var toggle = document.getElementById("mobileMenu")
+                if(toggle.style.height == "0px"){
+                    toggle.style.height = "200px";
+                }
+                else{
+                    toggle.style.height = "0px";
+                }
+            }
+        </script>
     </body>
 </html>

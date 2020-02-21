@@ -2,7 +2,7 @@
     <head>
         <title>Earth 27 - For Best Gaming Experience</title>
         <meta name="viewport" content="widht=device-widht, initiall-scale=1.0">
-        <link rel="stylesheet" href="styleabout.css">
+        <link rel="stylesheet" href="stylefollow.css>
         <link rel="shortcut icon" href="earth.png">
     </head>
     <body>
@@ -18,6 +18,18 @@
                     <a href="#"><li>Support us</li></a>
                 </ul>
             </div>
+            <img src="menu-icon.png" class="menu-icon" onclick="showMenu()">
         </div>
+        <script>
+            function showMenu(){
+                var toggle = document.getElementById("mobileMenu")
+                if(toggle.style.height == "0px"){
+                    toggle.style.height = "200px";
+                }
+                else{
+                    toggle.style.height = "0px";
+                }
+            }
+        </script>
     </body>
 </html>

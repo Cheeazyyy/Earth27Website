@@ -41,3 +41,35 @@ body{
     text-decoration: none;
     font-size: 18px;
 }
+.menu-icon{
+    width: 26px;
+    display: none;
+}
+@media (max-width: 700px){
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links ul{
+        padding: 20px 5px;
+    }
+    .nav-links{
+        margin-top: 30px;
+    }
+    .nav-logo{
+        margin-top: -5px;
+        margin-left: -5px;
+    }
+    .menu-icon{
+        display: block;
+        top: 20px;
+        right: 35px;
+        position: absolute;
+        cursor: pointer;
+    }
+    #mobileMenu{
+        height: 0;
+        overflow: hidden;
+        transition: 1s;
+}
+
